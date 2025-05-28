@@ -18,7 +18,7 @@
     "href": "posts/saber11_resumen/index.html#introducción",
     "title": "Pruebas saber 11, Introducción",
     "section": "Introducción",
-    "text": "Introducción\nEn el primer post sobre ciencia de datos, quiero introducir un conjunto de datos que considero realmente valioso, los resultados de las pruebas Saber 11 durante varios años en Colombia.\nLos datos se pueden encontrar en el siguiente enlace:\nSaber 11\nY los considero valiosos por una razón particular, esta constituido por los datos de una población completa. Esto es importante porque permite hacer una serie de experimentos prácticos para entender conceptos importantes de la estadística y la ciencia de datos."
+    "text": "Introducción\nLos datos se pueden encontrar en el siguiente enlace:\nSaber 11\nEste conjunto de datos lo considero valioso por una razón particular, esta constituido por los datos de una población completa. Esto es importante porque permite hacer una serie de experimentos prácticos para entender conceptos importantes de la estadística y la ciencia de datos."
   },
   {
     "objectID": "posts/saber11_resumen/index.html#descripción-de-los-datos",
@@ -35,17 +35,10 @@
     "text": "¿Cómo serán usados este conjunto de datos?\nLo que pretendo con estos datos es experimentar sobre varios conceptos relacionados con ciencia de datos.\nIniciando con conceptos estadísticos como los estimados de localización (medias y medianas), estimados de variabilidad, técnicas de muestreo, teorema del limite central, intervalos de confianza y posiblemente algo de distribuciones de probabilidad.\nSiguiendo con experimentos estadísticos y pruebas de significancia (prueba de hipótesis, p-values, t-test, ANOVA, etc), para luego hablar de regresión, predicción y clasificación, continuando con técnicas de aprendizaje automático como K-Nearest Neighbors, modelos de arboles, Random Forest, y redes neuronales.\nAhora, como empezamos? pues creo que del modo mas lógico, debemos conocer un poco mas nuestros datos, lo cual será el tema de la siguiente entrega."
   },
   {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post con Código",
-    "section": "",
-    "text": "Esto es simplemente una pruebita."
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Bloggeando Datos",
     "section": "",
-    "text": "Pruebas saber 11, Introducción\n\n\n\nAnálisis de datos\n\n\n\n\n\n\n\n\n\nMay 27, 2025\n\n\nJhonatan Zambrano\n\n\n\n\n\n\n\n\n\n\n\n\nPost con Código\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nMay 23, 2025\n\n\nJhonatan Zambrano\n\n\n\n\n\nNo matching items"
+    "text": "Pruebas saber 11, Introducción\n\n\n\nAnálisis de datos\n\nciencia de datos\n\nestadística\n\n\n\nEn el primer post sobre ciencia de datos, quiero introducir un conjunto de datos que considero realmente valioso, los resultados de las pruebas Saber 11 durante varios años en Colombia.\n\n\n\n\n\nMay 27, 2025\n\n\nJhonatan Zambrano\n\n\n\n\n\nNo matching items"
   }
 ]
