@@ -1,36 +1,8 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Bloggeando Datos",
-    "section": "",
-    "text": "Pruebas saber 11, Introducción\n\n\n\nAnálisis de datos\n\n\n\n\n\n\n\n\n\nMay 27, 2025\n\n\nJhonatan Zambrano\n\n\n\n\n\n\n\n\n\n\n\n\nPost con Código\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nMay 23, 2025\n\n\nJhonatan Zambrano\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
-    "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
-  },
-  {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post con Código",
-    "section": "",
-    "text": "Esto es simplemente una pruebita."
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
-    "section": "",
-    "text": "Hola, me interesa la ciencia de datos, los sistemas dinámicos y los sistemas de control. En este blog intento publicar artículos de interés sobre estos temas en español. Bienvenidos!!!"
-  },
-  {
-    "objectID": "posts/Bienvenida/index.html",
-    "href": "posts/Bienvenida/index.html",
-    "title": "Bienvenido a mi Blog",
     "section": "",
     "text": "Hola, me interesa la ciencia de datos, los sistemas dinámicos y los sistemas de control. En este blog intento publicar artículos de interés sobre estos temas en español. Bienvenidos!!!"
   },
@@ -42,6 +14,13 @@
     "text": "Estudiante generado con ai"
   },
   {
+    "objectID": "posts/saber11_resumen/index.html#introducción",
+    "href": "posts/saber11_resumen/index.html#introducción",
+    "title": "Pruebas saber 11, Introducción",
+    "section": "Introducción",
+    "text": "Introducción\nLos datos se pueden encontrar en el siguiente enlace:\nSaber 11\nEste conjunto de datos lo considero valioso por una razón particular, esta constituido por los datos de una población completa. Esto es importante porque permite hacer una serie de experimentos prácticos para entender conceptos importantes de la estadística y la ciencia de datos."
+  },
+  {
     "objectID": "posts/saber11_resumen/index.html#descripción-de-los-datos",
     "href": "posts/saber11_resumen/index.html#descripción-de-los-datos",
     "title": "Pruebas saber 11, Introducción",
@@ -49,17 +28,24 @@
     "text": "Descripción de los datos\nEl conjunto de datos es una tabla con 51 columnas y mas de 7 millones de filas en donde se almacena información anónima de cada uno de los estudiantes que han presentado el examen desde el año 2010 al año 2022. Los datos descriptivos de la tabla son los siguientes:\n\n\n\nDescripción extraída de la página de datos.gov.co\n\n\n\n\n\n\n\nNombre de la columna\nDescripcion\nTipo de dato\n\n\n\n\nPERIODO\nPeriodo de los resultados\nTexto\n\n\nESTU_TIPODOCUMENTO\nTipo de documento\nTexto\n\n\nESTU_CONSECUTIVO\nIdentificador del examinando\nTexto\n\n\nCOLE_AREA_UBICACION\nUbicación de la Sede\nTexto\n\n\nCOLE_BILINGUE\n¿Es colegio bilingüe?\nTexto\n\n\nCOLE_CALENDARIO\nCalendario del Establecimiento\nTexto\n\n\nCOLE_CARACTER\nCarácter del establecimiento\nTexto\n\n\nCOLE_COD_DANE_ESTABLECIMIENTO\nCódigo DANE del Establecimiento\nTexto\n\n\nCOLE_COD_DANE_SEDE\nCódigo DANE de la Sede\nTexto\n\n\nCOLE_COD_DEPTO_UBICACION\nDepartamento de la sede\nTexto\n\n\nCOLE_COD_MCPIO_UBICACION\nCódigo Municipio de la sede\nTexto\n\n\nCOLE_CODIGO_ICFES\nCódigo ICFES del Establecimiento\nTexto\n\n\nCOLE_DEPTO_UBICACION\nDepartamento de la sede\nTexto\n\n\nCOLE_GENERO\nGenero del Establecimiento\nTexto\n\n\nCOLE_JORNADA\nJornada de la Sede\nTexto\n\n\nCOLE_MCPIO_UBICACION\nMunicipio de la sede\nTexto\n\n\nCOLE_NATURALEZA\nNaturaleza del establecimiento\nTexto\n\n\nCOLE_NOMBRE_ESTABLECIMIENTO\nNombre del Establecimiento\nTexto\n\n\nCOLE_NOMBRE_SEDE\nNombre de la sede\nTexto\n\n\nCOLE_SEDE_PRINCIPAL\n¿Es la sede Principal?\nTexto\n\n\nESTU_COD_DEPTO_PRESENTACION\nCódigo del Departamento de Presentación del examen.\nTexto\n\n\nESTU_COD_MCPIO_PRESENTACION\nCódigo del Municipio de Presentación del examen.\nTexto\n\n\nESTU_COD_RESIDE_DEPTO\nCódigo del Departamento de residencia del examinando\nTexto\n\n\nESTU_COD_RESIDE_MCPIO\nCódigo del municipio de residencia del examinando\nTexto\n\n\nESTU_DEPTO_PRESENTACION\nDepartamento de Presentación del examen.\nTexto\n\n\nESTU_DEPTO_RESIDE\nDepartamento de residencia del examinando\nTexto\n\n\nESTU_ESTADOINVESTIGACION\n¿Permite usar sus datos para Investigaciones?\nTexto\n\n\nESTU_ESTUDIANTE\nS si es estudiante o N si es individual\nTexto\n\n\nESTU_FECHANACIMIENTO\nFecha de nacimiento del examinando\nTexto\n\n\nESTU_GENERO\nGenero del examinando\nTexto\n\n\nESTU_MCPIO_PRESENTACION\nMunicipio de Presentación del examen.\nTexto\n\n\nESTU_MCPIO_RESIDE\nMunicipio de residencia del examinando\nTexto\n\n\nESTU_NACIONALIDAD\nNacionalidad del examinando\nTexto\n\n\nESTU_PAIS_RESIDE\nPaís de residencia del examinando\nTexto\n\n\nESTU_PRIVADO_LIBERTAD\n¿Es privado de la libertad?\nTexto\n\n\nFAMI_CUARTOSHOGAR\n¿Cuántos cuartos tiene su hogar?\nTexto\n\n\nFAMI_EDUCACIONMADRE\nNivel de estudios de la madre\nTexto\n\n\nFAMI_EDUCACIONPADRE\nNivel de estudios de la padre\nTexto\n\n\nFAMI_ESTRATOVIVIENDA\nEstrato del examinando\nTexto\n\n\nFAMI_PERSONASHOGAR\n¿Con cuantas personas vive?\nTexto\n\n\nFAMI_TIENEAUTOMOVIL\n¿Tiene automóvil?\nTexto\n\n\nFAMI_TIENECOMPUTADOR\n¿Tiene computador?\nTexto\n\n\nFAMI_TIENEINTERNET\n¿Tiene internet?\nTexto\n\n\nFAMI_TIENELAVADORA\n¿Tiene lavadora?\nTexto\n\n\nDESEMP_INGLES\nDesempeño Inglés\nTexto\n\n\nPUNT_INGLES\nPuntaje Inglés\nTexto\n\n\nPUNT_MATEMATICAS\nPuntaje Matemáticas\nTexto\n\n\nPUNT_SOCIALES_CIUDADANAS\nPuntaje Sociales y Ciudadanas\nTexto\n\n\nPUNT_C_NATURALES\nPuntaje Ciencias Naturales\nTexto\n\n\nPUNT_LECTURA_CRITICA\nPuntaje Lectura crítica\nTexto\n\n\nPUNT_GLOBAL\nPuntaje Global\nTexto\n\n\n\n\n\nAdicional a los datos de los puntajes obtenidos por cada estudiante, en la tabla se incluyen datos del colegio (campos que empiezan con el prefijo “COLE”), datos del estudiante (campos que empiezan con el prefijo “EST”) y datos de la familia del estudiante (campos que empiezan con el prefijo “FAMI”)."
   },
   {
-    "objectID": "posts/saber11_resumen/index.html#introducción",
-    "href": "posts/saber11_resumen/index.html#introducción",
-    "title": "Pruebas saber 11, Introducción",
-    "section": "Introducción",
-    "text": "Introducción\nEn el primer post sobre ciencia de datos, quiero introducir un conjunto de datos que considero realmente valioso, los resultados de las pruebas Saber 11 durante varios años en Colombia.\nLos datos se pueden encontrar en el siguiente enlace:\nSaber 11\nY los considero valiosos por una razón particular, esta constituido por los datos de una población completa. Esto es importante porque permite hacer una serie de experimentos prácticos para entender conceptos importantes de la estadística y la ciencia de datos."
-  },
-  {
     "objectID": "posts/saber11_resumen/index.html#cómo-serán-usados-este-conjunto-de-datos",
     "href": "posts/saber11_resumen/index.html#cómo-serán-usados-este-conjunto-de-datos",
     "title": "Pruebas saber 11, Introducción",
     "section": "¿Cómo serán usados este conjunto de datos?",
     "text": "¿Cómo serán usados este conjunto de datos?\nLo que pretendo con estos datos es experimentar sobre varios conceptos relacionados con ciencia de datos.\nIniciando con conceptos estadísticos como los estimados de localización (medias y medianas), estimados de variabilidad, técnicas de muestreo, teorema del limite central, intervalos de confianza y posiblemente algo de distribuciones de probabilidad.\nSiguiendo con experimentos estadísticos y pruebas de significancia (prueba de hipótesis, p-values, t-test, ANOVA, etc), para luego hablar de regresión, predicción y clasificación, continuando con técnicas de aprendizaje automático como K-Nearest Neighbors, modelos de arboles, Random Forest, y redes neuronales.\nAhora, como empezamos? pues creo que del modo mas lógico, debemos conocer un poco mas nuestros datos, lo cual será el tema de la siguiente entrega."
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post con Código",
+    "section": "",
+    "text": "Esto es simplemente una pruebita."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bloggeando Datos",
+    "section": "",
+    "text": "Pruebas saber 11, Introducción\n\n\n\nAnálisis de datos\n\nciencia de datos\n\nestadística\n\n\n\nEn el primer post sobre ciencia de datos, quiero introducir un conjunto de datos que considero realmente valioso, los resultados de las pruebas Saber 11 durante varios años en Colombia.\n\n\n\n\n\nMay 27, 2025\n\n\nJhonatan Zambrano\n\n\n\n\n\nNo matching items"
   }
 ]

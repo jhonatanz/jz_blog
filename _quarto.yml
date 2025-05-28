@@ -8,11 +8,11 @@ website:
       - about.qmd
       - icon: github
         href: https://github.com/jhonatanz 
+  page-navigation: true
 format:
   html:
     theme:
-      - cosmo
-      - brand
+      - minty      
     css: styles.css
 
 

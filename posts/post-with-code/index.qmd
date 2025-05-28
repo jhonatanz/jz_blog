@@ -1,9 +1,0 @@
----
-title: "Post con Código"
-author: "Jhonatan Zambrano"
-date: "2025-05-23"
-categories: [news, code, analysis]
-image: "image.jpg"
----
-
-Esto es simplemente una pruebita.

@@ -2,21 +2,22 @@
 title: "Pruebas saber 11, Introducción"
 author: "Jhonatan Zambrano"
 date: "2025-05-27"
-categories: [Análisis de datos]
+categories: [Análisis de datos, ciencia de datos, estadística]
+abstract: "En el primer post sobre ciencia de datos, quiero introducir un conjunto de datos que considero realmente valioso, los resultados de las pruebas Saber 11 durante varios años en Colombia."
 image: "saber11.png"
+lang: "es"
 ---
 
 ![Estudiante generado con ai](saber11.png)
 
 
 ## Introducción
-En el primer post sobre ciencia de datos, quiero introducir un conjunto de datos que considero realmente valioso, los resultados de las pruebas Saber 11 durante varios años en Colombia.
 
 Los datos se pueden encontrar en el siguiente enlace:
 
 [Saber 11](https://www.datos.gov.co/Educaci-n/Resultados-nicos-Saber-11/kgxf-xxbe/data_preview)
 
-Y los considero valiosos por una razón particular, esta constituido por los datos de una población completa. Esto es importante porque permite hacer una serie de experimentos prácticos para entender conceptos importantes de la estadística y la ciencia de datos.
+Este conjunto de datos lo considero valioso por una razón particular, esta constituido por los datos de una población completa. Esto es importante porque permite hacer una serie de experimentos prácticos para entender conceptos importantes de la estadística y la ciencia de datos.
 
 ## Descripción de los datos
 

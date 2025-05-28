@@ -1,0 +1,12 @@
+---
+title: "Pruebas Saber 11, Exploración de datos"
+author: "Jhonatan Zambrano"
+date: "2025-05-23"
+categories: [Análisis de datos, ciencia de datos, EDA]
+abstract: "vamos a poner aquí una buena descripción"
+image: "image.jpg"
+lang: "es"
+draft: true
+---
+
+Esto es simplemente una pruebita.

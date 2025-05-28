@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.7.29">
@@ -7,7 +7,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Jhonatan Zambrano">
-<meta name="dcterms.date" content="2025-05-27">
 
 <title>Pruebas saber 11, Introducción – Bloggeando Datos</title>
 <style>
@@ -41,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-0815c480559380816a4d1ea211a47e91.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-8a90f77885d46a4bd8d09029cc068af5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-682540b14c234d2fa2c047eec733a450.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -56,17 +55,17 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "Sin resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
   }
 }</script>
 
@@ -85,8 +84,8 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">Bloggeando Datos</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Buscar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -114,6 +113,8 @@ ul.task-list li input[type="checkbox"] {
       <h1 class="title">Pruebas saber 11, Introducción</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">Análisis de datos</div>
+                <div class="quarto-category">ciencia de datos</div>
+                <div class="quarto-category">estadística</div>
               </div>
                   </div>
   </div>
@@ -122,22 +123,28 @@ ul.task-list li input[type="checkbox"] {
   <div class="quarto-title-meta">
 
       <div>
-      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-heading">Autor/a</div>
       <div class="quarto-title-meta-contents">
                <p>Jhonatan Zambrano </p>
             </div>
     </div>
       
       <div>
-      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-heading">Fecha de publicación</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">May 27, 2025</p>
+        <p class="date">27 de mayo de 2025</p>
       </div>
     </div>
     
       
     </div>
     
+  <div>
+    <div class="abstract">
+      <div class="block-title">Resumen</div>
+      En el primer post sobre ciencia de datos, quiero introducir un conjunto de datos que considero realmente valioso, los resultados de las pruebas Saber 11 durante varios años en Colombia.
+    </div>
+  </div>
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
@@ -158,10 +165,9 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <section id="introducción" class="level2">
 <h2 class="anchored" data-anchor-id="introducción">Introducción</h2>
-<p>En el primer post sobre ciencia de datos, quiero introducir un conjunto de datos que considero realmente valioso, los resultados de las pruebas Saber 11 durante varios años en Colombia.</p>
 <p>Los datos se pueden encontrar en el siguiente enlace:</p>
 <p><a href="https://www.datos.gov.co/Educaci-n/Resultados-nicos-Saber-11/kgxf-xxbe/data_preview">Saber 11</a></p>
-<p>Y los considero valiosos por una razón particular, esta constituido por los datos de una población completa. Esto es importante porque permite hacer una serie de experimentos prácticos para entender conceptos importantes de la estadística y la ciencia de datos.</p>
+<p>Este conjunto de datos lo considero valioso por una razón particular, esta constituido por los datos de una población completa. Esto es importante porque permite hacer una serie de experimentos prácticos para entender conceptos importantes de la estadística y la ciencia de datos.</p>
 </section>
 <section id="descripción-de-los-datos" class="level2">
 <h2 class="anchored" data-anchor-id="descripción-de-los-datos">Descripción de los datos</h2>
@@ -480,12 +486,12 @@ ul.task-list li input[type="checkbox"] {
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
+      button.setAttribute("title", "Copiado");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
+        button.setAttribute("data-bs-title", "Copiado");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
