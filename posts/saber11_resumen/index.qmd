@@ -1,0 +1,49 @@
+---
+title: "Pruebas saber 11, Introducción"
+author: "Jhonatan Zambrano"
+date: "2025-05-27"
+categories: [Análisis de datos]
+image: "saber11.png"
+---
+
+![Estudiante generado con ai](saber11.png)
+
+
+## Introducción
+En el primer post sobre ciencia de datos, quiero introducir un conjunto de datos que considero realmente valioso, los resultados de las pruebas Saber 11 durante varios años en Colombia.
+
+Los datos se pueden encontrar en el siguiente enlace:
+
+[Saber 11](https://www.datos.gov.co/Educaci-n/Resultados-nicos-Saber-11/kgxf-xxbe/data_preview)
+
+Y los considero valiosos por una razón particular, esta constituido por los datos de una población completa. Esto es importante porque permite hacer una serie de experimentos prácticos para entender conceptos importantes de la estadística y la ciencia de datos.
+
+## Descripción de los datos
+
+El conjunto de datos es una tabla con 51 columnas y mas de 7 millones de filas en donde se almacena información anónima de cada uno de los estudiantes que han presentado el examen desde el año 2010 al año 2022. Los datos descriptivos de la tabla son los siguientes:
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| tbl-cap: Descripción extraída de la página de datos.gov.co
+
+library(tidyverse)
+library(knitr)
+
+campos <-read_csv("../../Data/Campos_saber11.csv")
+kable(campos)
+
+```
+
+Adicional a los datos de los puntajes obtenidos por cada estudiante, en la tabla se incluyen datos del colegio (campos que empiezan con el prefijo "COLE"), datos del estudiante (campos que empiezan con el prefijo "EST") y datos de la familia del estudiante (campos que empiezan con el prefijo "FAMI").
+
+## ¿Cómo serán usados este conjunto de datos?
+
+Lo que pretendo con estos datos es experimentar sobre varios conceptos relacionados con ciencia de datos. 
+
+Iniciando con conceptos estadísticos como los estimados de localización (medias y medianas), estimados de variabilidad, técnicas de muestreo, teorema del limite central, intervalos de confianza y posiblemente algo de distribuciones de probabilidad.
+
+Siguiendo con experimentos estadísticos y pruebas de significancia (prueba de hipótesis, p-values, t-test, ANOVA, etc), para luego hablar de regresión, predicción y clasificación, continuando con técnicas de aprendizaje automático como *K-Nearest Neighbors*, modelos de arboles, *Random Forest*,  y redes neuronales.
+
+Ahora, como empezamos? pues creo que del modo mas lógico, debemos conocer un poco mas nuestros datos, lo cual será el tema de la siguiente entrega.

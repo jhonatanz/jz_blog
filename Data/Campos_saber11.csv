@@ -1,0 +1,52 @@
+Nombre de la columna,Descripcion,Tipo de dato
+PERIODO,Periodo de los resultados,Texto
+ESTU_TIPODOCUMENTO,Tipo de documento,Texto
+ESTU_CONSECUTIVO,Identificador del examinando,Texto
+COLE_AREA_UBICACION,Ubicación de la Sede,Texto
+COLE_BILINGUE,¿Es colegio bilingüe?,Texto
+COLE_CALENDARIO,Calendario del Establecimiento,Texto
+COLE_CARACTER,Carácter del establecimiento,Texto
+COLE_COD_DANE_ESTABLECIMIENTO,Código DANE del Establecimiento,Texto
+COLE_COD_DANE_SEDE,Código DANE de la Sede,Texto
+COLE_COD_DEPTO_UBICACION,Departamento de la sede,Texto
+COLE_COD_MCPIO_UBICACION,Código Municipio de la sede,Texto
+COLE_CODIGO_ICFES,Código ICFES del Establecimiento,Texto
+COLE_DEPTO_UBICACION,Departamento de la sede,Texto
+COLE_GENERO,Genero del Establecimiento,Texto
+COLE_JORNADA,Jornada de la Sede,Texto
+COLE_MCPIO_UBICACION,Municipio de la sede,Texto
+COLE_NATURALEZA,Naturaleza del establecimiento,Texto
+COLE_NOMBRE_ESTABLECIMIENTO,Nombre del Establecimiento,Texto
+COLE_NOMBRE_SEDE,Nombre de la sede,Texto
+COLE_SEDE_PRINCIPAL,¿Es la sede Principal?,Texto
+ESTU_COD_DEPTO_PRESENTACION,Código del Departamento de Presentación del examen.,Texto
+ESTU_COD_MCPIO_PRESENTACION,Código del Municipio de Presentación del examen.,Texto
+ESTU_COD_RESIDE_DEPTO,Código del Departamento de residencia del examinando,Texto
+ESTU_COD_RESIDE_MCPIO,Código del municipio de residencia del examinando,Texto
+ESTU_DEPTO_PRESENTACION,Departamento de Presentación del examen.,Texto
+ESTU_DEPTO_RESIDE,Departamento de residencia del examinando,Texto
+ESTU_ESTADOINVESTIGACION,¿Permite usar sus datos para Investigaciones?,Texto
+ESTU_ESTUDIANTE,S si es estudiante o N si es individual,Texto
+ESTU_FECHANACIMIENTO,Fecha de nacimiento del examinando,Texto
+ESTU_GENERO,Genero del examinando,Texto
+ESTU_MCPIO_PRESENTACION,Municipio de Presentación del examen.,Texto
+ESTU_MCPIO_RESIDE,Municipio de residencia del examinando,Texto
+ESTU_NACIONALIDAD,Nacionalidad del examinando,Texto
+ESTU_PAIS_RESIDE,País de residencia del examinando,Texto
+ESTU_PRIVADO_LIBERTAD,¿Es privado de la libertad?,Texto
+FAMI_CUARTOSHOGAR,¿Cuántos cuartos tiene su hogar?,Texto
+FAMI_EDUCACIONMADRE,Nivel de estudios de la madre,Texto
+FAMI_EDUCACIONPADRE,Nivel de estudios de la padre,Texto
+FAMI_ESTRATOVIVIENDA,Estrato del examinando,Texto
+FAMI_PERSONASHOGAR,¿Con cuantas personas vive?,Texto
+FAMI_TIENEAUTOMOVIL,¿Tiene automóvil?,Texto
+FAMI_TIENECOMPUTADOR,¿Tiene computador?,Texto
+FAMI_TIENEINTERNET,¿Tiene internet?,Texto
+FAMI_TIENELAVADORA,¿Tiene lavadora?,Texto
+DESEMP_INGLES,Desempeño Inglés,Texto
+PUNT_INGLES,Puntaje Inglés,Texto
+PUNT_MATEMATICAS,Puntaje Matemáticas,Texto
+PUNT_SOCIALES_CIUDADANAS,Puntaje Sociales y Ciudadanas,Texto
+PUNT_C_NATURALES,Puntaje Ciencias Naturales,Texto
+PUNT_LECTURA_CRITICA,Puntaje Lectura crítica,Texto
+PUNT_GLOBAL,Puntaje Global,Texto

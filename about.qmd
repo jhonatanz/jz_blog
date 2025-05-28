@@ -1,0 +1,16 @@
+---
+title: "About"
+image: Bogota.png
+about:
+  template: jolla
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com
+    - icon: github
+      text: Github
+      href: https://github.com/jhonatanz
+
+---
+
+Hola, me interesa la ciencia de datos, los sistemas dinámicos y los sistemas de control. En este blog intento publicar artículos de interés sobre estos temas en español. Bienvenidos!!!
