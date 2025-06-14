@@ -18,7 +18,7 @@
     "href": "posts/saber11_resumen/index.html#introducción",
     "title": "Pruebas saber 11, Introducción",
     "section": "Introducción",
-    "text": "Introducción\nLos datos se pueden encontrar en el siguiente enlace:\nSaber 11\nEste conjunto de datos lo considero valioso por una razón particular, esta constituido por los datos de una población completa. Esto es importante porque permite hacer una serie de experimentos prácticos para entender conceptos importantes de la estadística y la ciencia de datos."
+    "text": "Introducción\nLos datos se pueden encontrar en el siguiente enlace:\nSaber 11\n\n\n\n\n\n\nAdvertencia\n\n\n\nEl tamaño del archivo es de aproximadamente 3 GB\n\n\nEste conjunto de datos lo considero valioso por una razón particular, esta constituido por los datos de una población completa. Esto es importante porque permite hacer una serie de experimentos prácticos para entender conceptos importantes de la estadística y la ciencia de datos."
   },
   {
     "objectID": "posts/saber11_resumen/index.html#descripción-de-los-datos",
@@ -32,7 +32,14 @@
     "href": "posts/saber11_resumen/index.html#cómo-serán-usados-este-conjunto-de-datos",
     "title": "Pruebas saber 11, Introducción",
     "section": "¿Cómo serán usados este conjunto de datos?",
-    "text": "¿Cómo serán usados este conjunto de datos?\nLo que pretendo con estos datos es experimentar sobre varios conceptos relacionados con ciencia de datos.\nIniciando con conceptos estadísticos como los estimados de localización (medias y medianas), estimados de variabilidad, técnicas de muestreo, teorema del limite central, intervalos de confianza y posiblemente algo de distribuciones de probabilidad.\nSiguiendo con experimentos estadísticos y pruebas de significancia (prueba de hipótesis, p-values, t-test, ANOVA, etc), para luego hablar de regresión, predicción y clasificación, continuando con técnicas de aprendizaje automático como K-Nearest Neighbors, modelos de arboles, Random Forest, y redes neuronales.\nAhora, como empezamos? pues creo que del modo mas lógico, debemos conocer un poco mas nuestros datos, lo cual será el tema de la siguiente entrega."
+    "text": "¿Cómo serán usados este conjunto de datos?\nLo que pretendo con estos datos es experimentar sobre varios conceptos relacionados con ciencia de datos.\nIniciando con conceptos estadísticos como los estimados de localización (medias y medianas), estimados de variabilidad, técnicas de muestreo, teorema del limite central, intervalos de confianza y posiblemente algo de distribuciones de probabilidad.\nSiguiendo con experimentos estadísticos y pruebas de significancia (prueba de hipótesis, p-values, t-test, ANOVA, etc), para luego hablar de regresión, predicción y clasificación, continuando con técnicas de aprendizaje automático como K-Nearest Neighbors, modelos de arboles, Random Forest, y redes neuronales.\nAhora, como empezamos? pues creo que del modo mas lógico, debemos almacenar de algún modo eficiente toda esa información, para lo cual crearemos una base de datos en nuestra proxima entrega."
+  },
+  {
+    "objectID": "posts/saber11_resumen/index.html#que-herramienta-usaremos",
+    "href": "posts/saber11_resumen/index.html#que-herramienta-usaremos",
+    "title": "Pruebas saber 11, Introducción",
+    "section": "¿Que herramienta usaremos?",
+    "text": "¿Que herramienta usaremos?\nEste Blog lo estoy desarrollando usando Positron como IDE, Quarto como herramienta de publicación, MariaDB para base de datos, MySQL y R como lenguaje de programación."
   },
   {
     "objectID": "index.html",
