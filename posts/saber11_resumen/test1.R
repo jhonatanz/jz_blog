@@ -1,0 +1,137 @@
+# Reemplaza con tus credenciales y detalles de la base de datos
+library(RMariaDB)
+
+db_user <- "positron"
+db_password <- "E5bYqh9sXR5m7q"
+db_name <- "Saber11Resultados" # Nombre de la base de datos que crearás o usarás
+db_host <- "192.168.1.33" # o "localhost"
+db_port <- 3306
+
+# Establecer la conexión
+con <- dbConnect(RMariaDB::MariaDB(), 
+                 user = db_user, 
+                 password = db_password, 
+                 dbname = db_name, # Puedes omitir dbname si la BD no existe aún y la crearás con SQL
+                 host = db_host, 
+                 port = db_port)
+
+# Si la base de datos no existe, puedes crearla así (descomenta y ejecuta una vez):
+# dbExecute(con, paste0("CREATE DATABASE IF NOT EXISTS ", db_name, " CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"))
+# dbExecute(con, paste0("USE ", db_name, ";"))
+
+# Verificar la conexión (opcional)
+print(dbListTables(con))
+
+query_create_deptos <- "
+CREATE TABLE Departamentos (
+    DEPTO_CODIGO VARCHAR(10) NOT NULL,
+    DEPTO_NOMBRE VARCHAR(255) NOT NULL,
+    PRIMARY KEY (DEPTO_CODIGO)
+);"
+dbExecute(con, query_create_deptos)
+
+query_create_municipios <- "
+CREATE TABLE Municipios (
+    MCPIO_CODIGO VARCHAR(10) NOT NULL,
+    DEPTO_CODIGO VARCHAR(10) NOT NULL,
+    MCPIO_NOMBRE VARCHAR(255) NOT NULL,
+    PRIMARY KEY (MCPIO_CODIGO),
+    FOREIGN KEY (DEPTO_CODIGO) REFERENCES Departamentos(DEPTO_CODIGO)
+        ON DELETE RESTRICT ON UPDATE CASCADE
+);"
+dbExecute(con, query_create_municipios)
+
+query_create_colegios <- "
+CREATE TABLE Colegios (
+    COLE_COD_DANE_ESTABLECIMIENTO VARCHAR(20) NOT NULL,
+    COLE_NOMBRE_ESTABLECIMIENTO VARCHAR(255),
+    COLE_NATURALEZA VARCHAR(50),
+    COLE_CARACTER VARCHAR(100),
+    COLE_BILINGUE VARCHAR(5),
+    COLE_CALENDARIO VARCHAR(20),
+    COLE_GENERO_EST VARCHAR(20),
+    COLE_CODIGO_ICFES VARCHAR(20),
+    PRIMARY KEY (COLE_COD_DANE_ESTABLECIMIENTO)
+);"
+dbExecute(con, query_create_colegios)
+
+query_create_sedes <- "
+CREATE TABLE Sedes (
+    COLE_COD_DANE_SEDE VARCHAR(20) NOT NULL,
+    COLE_COD_DANE_ESTABLECIMIENTO VARCHAR(20) NOT NULL,
+    COLE_NOMBRE_SEDE VARCHAR(255),
+    COLE_AREA_UBICACION VARCHAR(20),
+    COLE_JORNADA VARCHAR(50),
+    COLE_SEDE_PRINCIPAL VARCHAR(2),
+    MCPIO_CODIGO_UBICACION VARCHAR(10) NOT NULL,
+    PRIMARY KEY (COLE_COD_DANE_SEDE),
+    FOREIGN KEY (COLE_COD_DANE_ESTABLECIMIENTO) REFERENCES Colegios(COLE_COD_DANE_ESTABLECIMIENTO)
+        ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY (MCPIO_CODIGO_UBICACION) REFERENCES Municipios(MCPIO_CODIGO)
+        ON DELETE RESTRICT ON UPDATE CASCADE
+);"
+dbExecute(con, query_create_sedes)
+
+query_create_estudiantes <- "
+CREATE TABLE Estudiantes (
+    ESTU_CONSECUTIVO VARCHAR(50) NOT NULL,
+    ESTU_TIPODOCUMENTO VARCHAR(10),
+    ESTU_FECHANACIMIENTO DATE,
+    ESTU_GENERO VARCHAR(10),
+    ESTU_NACIONALIDAD VARCHAR(100),
+    ESTU_PAIS_RESIDE VARCHAR(100),
+    ESTU_PRIVADO_LIBERTAD VARCHAR(2),
+    ESTU_ESTADOINVESTIGACION VARCHAR(50),
+    ESTU_ESTUDIANTE VARCHAR(2),
+    MCPIO_CODIGO_RESIDENCIA VARCHAR(10),
+    PRIMARY KEY (ESTU_CONSECUTIVO),
+    FOREIGN KEY (MCPIO_CODIGO_RESIDENCIA) REFERENCES Municipios(MCPIO_CODIGO)
+        ON DELETE SET NULL ON UPDATE CASCADE
+);"
+dbExecute(con, query_create_estudiantes)
+
+query_create_presentacion <- "
+CREATE TABLE PresentacionesExamen (
+    ID_PRESENTACION INT AUTO_INCREMENT NOT NULL,
+    ESTU_CONSECUTIVO VARCHAR(50) NOT NULL,
+    PERIODO VARCHAR(10) NOT NULL,
+    COLE_COD_DANE_SEDE_INSCRITO VARCHAR(20),
+    MCPIO_CODIGO_PRESENTACION VARCHAR(10) NOT NULL,
+    PUNT_INGLES INT,
+    DESEMP_INGLES VARCHAR(20),
+    PUNT_MATEMATICAS INT,
+    PUNT_SOCIALES_CIUDADANAS INT,
+    PUNT_C_NATURALES INT,
+    PUNT_LECTURA_CRITICA INT,
+    PUNT_GLOBAL INT,
+    PRIMARY KEY (ID_PRESENTACION),
+    FOREIGN KEY (ESTU_CONSECUTIVO) REFERENCES Estudiantes(ESTU_CONSECUTIVO)
+        ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY (COLE_COD_DANE_SEDE_INSCRITO) REFERENCES Sedes(COLE_COD_DANE_SEDE)
+        ON DELETE SET NULL ON UPDATE CASCADE,
+    FOREIGN KEY (MCPIO_CODIGO_PRESENTACION) REFERENCES Municipios(MCPIO_CODIGO)
+        ON DELETE RESTRICT ON UPDATE CASCADE,
+    UNIQUE KEY UK_Estudiante_Periodo (ESTU_CONSECUTIVO, PERIODO)
+);"
+dbExecute(con, query_create_presentacion)
+
+query_create_familia <- "
+CREATE TABLE InfoFamiliarEstudiante (
+    ESTU_CONSECUTIVO_EXAMEN VARCHAR(50) NOT NULL,
+    FAMI_CUARTOSHOGAR VARCHAR(50),
+    FAMI_EDUCACIONMADRE VARCHAR(100),
+    FAMI_EDUCACIONPADRE VARCHAR(100),
+    FAMI_ESTRATOVIVIENDA VARCHAR(20),
+    FAMI_PERSONASHOGAR VARCHAR(20),
+    FAMI_TIENEAUTOMOVIL VARCHAR(5),
+    FAMI_TIENECOMPUTADOR VARCHAR(5),
+    FAMI_TIENEINTERNET VARCHAR(5),
+    FAMI_TIENELAVADORA VARCHAR(5),
+    PRIMARY KEY (ESTU_CONSECUTIVO_EXAMEN),
+    FOREIGN KEY (ESTU_CONSECUTIVO_EXAMEN) REFERENCES Estudiantes(ESTU_CONSECUTIVO)
+        ON DELETE CASCADE ON UPDATE CASCADE
+);"
+dbExecute(con, query_create_familia)
+
+# Cerrar la conexión
+dbDisconnect(con)

@@ -17,6 +17,10 @@ Los datos se pueden encontrar en el siguiente enlace:
 
 [Saber 11](https://www.datos.gov.co/Educaci-n/Resultados-nicos-Saber-11/kgxf-xxbe/data_preview)
 
+:::{.callout-warning}
+El tamaño del archivo es de aproximadamente 3 GB
+:::
+
 Este conjunto de datos lo considero valioso por una razón particular, esta constituido por los datos de una población completa. Esto es importante porque permite hacer una serie de experimentos prácticos para entender conceptos importantes de la estadística y la ciencia de datos.
 
 ## Descripción de los datos
@@ -47,4 +51,8 @@ Iniciando con conceptos estadísticos como los estimados de localización (media
 
 Siguiendo con experimentos estadísticos y pruebas de significancia (prueba de hipótesis, p-values, t-test, ANOVA, etc), para luego hablar de regresión, predicción y clasificación, continuando con técnicas de aprendizaje automático como *K-Nearest Neighbors*, modelos de arboles, *Random Forest*,  y redes neuronales.
 
-Ahora, como empezamos? pues creo que del modo mas lógico, debemos conocer un poco mas nuestros datos, lo cual será el tema de la siguiente entrega.
+Ahora, como empezamos? pues creo que del modo mas lógico, debemos almacenar de algún modo eficiente toda esa información, para lo cual crearemos una base de datos en nuestra proxima entrega.
+
+## ¿Que herramienta usaremos?
+
+Este Blog lo estoy desarrollando usando [Positron](https://positron.posit.co/) como IDE, [Quarto](https://quarto.org/) como herramienta de publicación, [MariaDB](https://mariadb.org/) para base de datos, [MySQL](https://www.mysql.com/) y [R](https://www.r-project.org/) como lenguaje de programación.
